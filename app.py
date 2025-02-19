@@ -11,6 +11,8 @@ from modules.domain_analysis import *
 from modules.disorder_analysis import *
 from modules.benefit_analysis import *
 from modules.book_fe import *
+import torch
+torch.classes.__path__ = []
 
 
 #import from utils 

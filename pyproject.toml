@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "lr"
+version = "0.1.0"
+description = "Literary Analysis of narrative stories"
+authors = ["Shabucode <shabnamb4u@gmail.com>"]
+license = "\"MIT\""
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
