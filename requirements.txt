@@ -9,6 +9,7 @@ IPython
 ipykernel
 fpdf
 spacy
+en_core_web_sm
 keybert
 tqdm
 nltk

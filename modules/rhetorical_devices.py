@@ -1,9 +1,21 @@
 import nltk
 import spacy
 
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nlp = spacy.load('en_core_web_sm')
+nltk_data_path = "nltk_data" 
+nltk.data.path.append(nltk_data_path)
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    print("Punkt not found. Please download it using nltk.download('punkt')")
+
+try:
+    nltk.data.find('taggers/averaged_perceptron_tagger')
+except LookupError:
+    print("taggers not found. Please download it using nltk.download('averaged_perceptron_tagger')")
+# nltk.download('averaged_perceptron_tagger')
+# nlp = spacy.load('en_core_web_sm')
+import en_core_web_sm
+nlp = en_core_web_sm.load()
 
 from transformers import pipeline
 from nltk.tokenize import sent_tokenize
