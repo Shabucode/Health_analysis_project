@@ -1,0 +1,13 @@
+
+__pycache__/
+
+# .streamlit/
+modules/__pycache__/
+utils/__pycache__/
+
+LanguageTool/
+
+venv/
+
+story_anthology.xlsx
+uploaded_anthology.xlsx

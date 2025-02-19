@@ -1,0 +1,29 @@
+pdfplumber
+language_tool_python
+pandas
+matplotlib
+py-readability-metrics
+openpyxl
+Jinja2
+IPython
+ipykernel
+fpdf
+spacy
+keybert
+tqdm
+nltk
+vaderSentiment
+sentence_transformers
+wordninja
+langchain
+# langchain_community
+langchain-community
+faiss-cpu
+langchain-ollama
+streamlit
+pydantic
+
+
+
+
+#used setup.py for "!python -m spacy download en_core_web_sm" which should be run in terminal post installation as a post-installation step
