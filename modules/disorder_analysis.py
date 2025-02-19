@@ -114,7 +114,7 @@ def create_anthology(disorder_counts, focused_disorders, story_id, anthology_fil
             anthology_df.loc[anthology_df['disorder'] == disorder, 'proportion'] = proportion
 
     print(anthology_df)
-    print(f"\nThe story '{story_id}' has been added\updated in the anthology under the following disorders:")
+    print(f"\nThe story '{story_id}' has been added or updated in the anthology under the following disorders:")
     print(disorder_counts[['disorder', 'proportion']].to_string(index=False))
     # Now, use OpenPyxl to merge `disorder` cells and separate `story_id` rows
     wb = Workbook()
