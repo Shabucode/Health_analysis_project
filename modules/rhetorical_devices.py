@@ -13,9 +13,9 @@ try:
 except LookupError:
     print("taggers not found. Please download it using nltk.download('averaged_perceptron_tagger')")
 # nltk.download('averaged_perceptron_tagger')
-# nlp = spacy.load('en_core_web_sm')
-import en_core_web_sm
-nlp = en_core_web_sm.load()
+nlp = spacy.load('en_core_web_sm')
+# import en_core_web_sm
+# nlp = en_core_web_sm.load()
 
 from transformers import pipeline
 from nltk.tokenize import sent_tokenize
