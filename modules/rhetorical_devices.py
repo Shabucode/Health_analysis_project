@@ -1,6 +1,15 @@
+#To find the rhetorical devices in the narrative story
+
+from transformers import pipeline
+from nltk.tokenize import sent_tokenize
+# import pdfplumber
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
 import nltk
 import spacy
 
+#For Nltk dependencies
 nltk_data_path = "nltk_data" 
 nltk.data.path.append(nltk_data_path)
 try:
@@ -12,17 +21,8 @@ try:
     nltk.data.find('taggers/averaged_perceptron_tagger')
 except LookupError:
     print("taggers not found. Please download it using nltk.download('averaged_perceptron_tagger')")
-# nltk.download('averaged_perceptron_tagger')
-nlp = spacy.load('en_core_web_sm')
-# import en_core_web_sm
-# nlp = en_core_web_sm.load()
 
-from transformers import pipeline
-from nltk.tokenize import sent_tokenize
-# import pdfplumber
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
+nlp = spacy.load('en_core_web_sm') #spacy dependency
 
 
 def labels_and_classifier():
